@@ -1,12 +1,8 @@
-require 'sinatra/base' 
+require 'sinatra'
+require 'sinatra/reloader'
+require 'httparty'
+require 'pry'
 
-class HelloWorld < Sinatra::Base
-  get '/' do
-    erb :index
-  end
+get '/' do
+  erb :index
 end
-
-
-
-
-
