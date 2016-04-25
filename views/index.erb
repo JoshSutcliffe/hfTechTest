@@ -1,1 +1,5 @@
-<h1>hello world</h1>
+<h1>Sonar</h1>
+
+<% @result.each do |abode| %>
+    <p><a href="/show/<%= abode['property_id'] %>"><%= Property['Title'] %></a></p>
+<% end %>
